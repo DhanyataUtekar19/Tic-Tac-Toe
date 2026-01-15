@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelSelection"
+    android:background="@drawable/bg">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button_background"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:backgroundTint="#E1470D"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:text="EXIT"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_above="@id/btnEasy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Select Your Challenge"
+        android:textColor="#ffffff"
+        android:layout_marginStart="40dp"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Walk in the Park"
+        android:gravity="center"
+        android:layout_above="@id/btnMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="26sp"
+        android:onClick="onEasyButtonClick"/>
+
+    <Button
+        android:id="@+id/btnMedium"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Not Too Hard"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/btnMedium"
+        android:layout_marginTop="40dp"
+        android:text="Tough Cookie"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btnUltimate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/btnHard"
+        android:layout_marginTop="40dp"
+        android:text="Mastermind Mode"
+        android:textSize="26sp" />
+</RelativeLayout>
